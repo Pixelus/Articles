@@ -119,3 +119,61 @@ git push
  → envoie les commits sur le serveur sinon vos commits restent en local
 
 * retournez sur votre compte Bitbucket et actualisez la page de votre premier dépôt, celle où vous avez copié l'adresse HTTPS du dépôt. Vous pouvez constater que votre dépôt a bien été envoyé sur votre serveur, et vous pouvez voir les dossiers créés dans l'onglet *Source* situé sous l'onglet *Vue d'ensemble* dans le menu de gauche.
+
+Vous venez de créer votre premier dépôt. A vous maintenant d'explorer les possibilités offertes avec la gestion de version. Voici quelques autres commandes utiles qui pourront vous servir :
+
+```
+git commit -a
+```
+→ place tout fichier déjà en suivi de version dans la zone d'index afin d'éviter de faire un *add*
+```
+git rm -f mon_fichier
+```
+→ supprime et désindexe le fichier *mon_fichier*
+```
+git rm --cached mon_fichier
+```
+→ arrête le suivi du fichier *mon_fichier* mais le conserve dans la copie de travail
+```
+git mv mon_fichier monnouveaufichier
+```
+→ renomme le fichier *mon_fichier* en *mon_nouveau_fichier*
+```
+git show
+```
+→ affiche les détails d'un objet Git
+```
+git diff
+```
+→ affiche les modifications indexées et non indexées entre deux fichiers
+```
+git branch ma_branche
+```
+→ crée une nouvelle branche avec le nom *ma_branche*
+```
+git checkout
+```
+→ se positionne sur la branche voulue
+```
+git checkout -b ma_branche
+```
+→ crée la branche *ma_branche* et se positionne immédiatement dessus
+```
+git merge ma_branche
+```
+→ fusionne la branche *ma_branche* avec la branche sur laquelle on se trouve
+```
+git pull
+```
+→ récupère et télécharge les nouveaux commits présents sur le serveur
+
+## Ressources
+
+Voici quelques liens qui pourront vous initier plus en détails à Git :
+
+* Aide–mémoire interactif sur Git (en français) : [http://ndpsoftware.com/git-cheatsheet.html](http://ndpsoftware.com/git-cheatsheet.html)
+* Application en ligne Learn Git Branching (en français !) : [http://pcottle.github.io/learnGitBranching/](http://ndpsoftware.com/git-cheatsheet.html)
+* Vidéos d'apprentissage sur le site de Git (en anglais) : [http://git-scm.com/videos](https://git-scm.com/videos)
+* Cours d'Udacity sur Git (en anglais) : [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
+* Conférence d'Anna Whitney dans le cadre du cours Computer Science CS50 de Harvard (en anglais) : [How (and Why) You Should Use Git](https://www.youtube.com/watch?v=71WzH4inmkg&feature=youtu.be)
+* Conférence de Brian Yu dans le cadre du cours Computer Science CS50 de Harvard (en anglais) : [An Introduction to Git and GitHub](https://www.youtube.com/watch?v=MJUJ4wbFm_A&feature=youtu.be)

@@ -54,3 +54,68 @@ Pour créer votre premier projet avec Git et Bitbucket, vous devez au préalable
 * télécharger et installer la dernière version de [Git](https://git-scm.com/)
 * exécutez les commandes suivantes dans votre terminal pour paramétrer vos identifiants d'utilisation de Git
 
+```
+git config --global user.name "Votre pseudo"
+git config --global user.email "Votre email"
+```
+
+Relancez votre terminal et vérifier que git fonctionne en tapant
+
+```
+git
+```
+
+Un guide d'utilisation de Git devrait s'afficher en anglais dans votre console.
+
+* connectez-vous sur le site de bitbucket et créer un dépôt en allant sur *Créer > Créer un dépôt*
+* remplissez le formulaire pour créer votre nouveau dépôt (donnons lui le nom de Projet) en n'oubliant pas de cocher les cases *Gestion de bug* et *Wiki*, puis cliquez sur *Créer un dépôt*
+* cliquez sur Cloner le dépôt en haut à gauche et copier l'adresse HTTPS
+* ouvrez votre terminal et placez vous dans le dossier de stockage de vos dépôts en utilisant la ligne de commande
+
+Si vous ne savez pas utiliser le langage Shell en ligne de commande, je vous recommande le très bon tutoriel [Reprenez le contrôle à l'aide de Linux](https://openclassrooms.com/fr/courses/43538-reprenez-le-controle-a-laide-de-linux/38076-entrer-une-commande) sur le site d'OpenClassrooms.
+
+* lorsque vous êtes positionné dans votre dossier de dépôt dans votre terminal, collez l'adresse HTTPS que vous avez copié précédemment
+* tapez ensuite les commandes suivantes :
+ 
+```
+git status
+```
+→ détermine l'état des fichiers dans le dépôt et indique s'ils sont suivis
+```
+git add projet
+```
+→ ajoute le dossier *projet* à l'index, on place le dossier sous version, cela indique à Git de suivre le dossier projet
+```
+cd projet
+```
+→ ce paramètre vous place dans le dossier *projet*
+```
+git init nouveau dossier
+```
+→ crée un nouveau dépôt ou [repository](https://fr.wikipedia.org/wiki/D%C3%A9p%C3%B4t_(informatique)) vide s'appelant *nouveau_dossier*
+```
+ls
+```
+→ liste les fichiers et dossiers du répertoire courant, vous pouvez constater qu'un nouveau dossier appelé *nouveau_dossier* existe maintenant dans votre dossier *projet*
+```
+git status
+```
+→ le terminal nous indique qu'il y a un nouveau dossier, le dossier *nouveau_dossier*, et que ce fichier n'est pas suivi par la gestion de version
+```
+git add nouveau_dossier
+```
+→ ajoute le dossier *nouveau_dossier* à l'index, Git nous indique qu'il y a un nouveau dossier suivi
+```
+git commit -m "Premier commit"
+```
+→ crée un commit avec le message "Premier commit" et valide les modifications enregistrées
+```
+git log
+```
+→ inspecte l'historique des commits, vous pouvez voir que votre commit apparaît avec la date, l'heure, le nom du commit et votre message
+```
+git push
+```
+ → envoie les commits sur le serveur sinon vos commits restent en local
+
+* retournez sur votre compte Bitbucket et actualisez la page de votre premier dépôt, celle où vous avez copié l'adresse HTTPS du dépôt. Vous pouvez constater que votre dépôt a bien été envoyé sur votre serveur, et vous pouvez voir les dossiers créés dans l'onglet *Source* situé sous l'onglet *Vue d'ensemble* dans le menu de gauche.

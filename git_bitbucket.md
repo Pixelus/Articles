@@ -8,4 +8,7 @@ Le gestionnaire de version est l'outil indispensable du développeur qui souhait
 * partager les fichiers avec les autres développeurs du projet
 
 Pour contrôler les versions de ses fichiers, le développeur utilise un logiciel de gestion de version et un hébergeur de dépôt. Un **logiciel de version décentralisé** comme [Git](https://git-scm.com/) permet à chaque développeur de travailler de son côté, à son rythme et de façon asynchrone des autres développeurs. Il existe ainsi plusieurs dépôts venant de chaque intervenant.
-![Git](/https://pixelus.github.io/img/git.png "Git")   
+
+<p align="center">
+  <img width="200" src="https://github.com/Pixelus/Articles/blob/master/assets/git.png" "Git">
+</p>

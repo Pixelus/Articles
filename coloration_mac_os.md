@@ -58,3 +58,86 @@ Voici le résultat avec la couleur activée dans un terminal de couleur claire.
 <p align="center">
   <img width="480" src="https://github.com/Pixelus/Articles/blob/master/assets/terminal-light.jpg" "Terminal">
 </p>
+
+Et voici le résultat dans un terminal avec un fond d'écran foncé.
+
+<p align="center">
+  <img width="480" src="https://github.com/Pixelus/Articles/blob/master/assets/terminal-black.jpg" "Terminal">
+</p>
+
+## Détails des commandes UNIX utilisées
+
+* *Commande de gestion de répertoire*
+
+```
+ls
+```
+→ liste le contenu d'un répertoire
+```
+l
+```
+→ liste les informations détaillées des fichiers (type de fichier, nombre de liens avec le fichier, propriétaire du fichier...)
+```
+a
+```
+→ liste les fichiers cachés
+```
+ls -la
+```
+ → raccourci de ls -l -a, affichage détaillé incluant les fichiers cachés
+
+* *Opérateur de redirection d'entrée/sortie*
+
+```
+|
+```
+→ appelé symbole pipe, relie deux commandes entre elles
+
+* *Commande de recherche*
+
+```
+grep
+```
+→ affiche les lignes du fichier contenant la chaîne de caractère
+
+* *Commande d'édition*
+
+```
+touch
+```
+→ modifie les caractéristiques d'un fichier ou crée un fichier vide s'il n'existe pas déjà
+
+* *Commande de client FTP*
+
+```
+open
+```
+→ ouvre une session FTP ou une application
+
+* *Commande d'exportation de variable*
+
+```
+export
+```
+ → exporte (copie) une variable de manière à ce qu'elle soit visible par les scripts
+
+* *Autres commandes*
+
+```
+CLICOLOR=1
+```
+→ active simplement la couleur dans votre terminal (principe de l'interrupteur)
+```
+LSCOLORS
+```
+→ spécifie et personnalise les couleurs que vous utilisez
+
+## Ressources
+
+Voici quelques liens qui pourront vous être utiles :
+
+* Générateur de couleur : [LSCOLORS Generator](https://geoff.greer.fm/lscolors/) de Geoff Greer
+* Indexation des couleurs pour la commande LSCOLORS (en anglais) : [LSCOLORS & LS_COLORS](https://gist.github.com/thomd/7667642)
+* Tout ce que vous avez toujours voulu savoir sur Unix sans jamais oser le demander – Où comment utiliser la ligne de commande quand on n'y connaît goutte : [http://lozzone.free.fr/unix/guide-unix.pdf](http://lozzone.free.fr/unix/guide-unix.pdf)
+* Cours d'Udacity sur le Shell et la ligne de commande (en anglais) : [Linux Command Line Basics – Getting Started with the Shell](https://www.udacity.com/course/linux-command-line-basics--ud595)
+* Conférence de Douglas Kline dans le cadre du cours Computer Science CS50 de Harvard (en anglais) : [Unix Shells, environments](https://archive.org/details/youtube-qzskNguDp8o)
